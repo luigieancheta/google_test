@@ -1,0 +1,233 @@
+/* Base Styles */
+body {
+  color: #222;
+  font-size: small;
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 980px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* nav */
+.main-nav ul li,
+.footer-nav ul li{
+  display: inline-block;
+}
+
+.main-nav ul li a,
+.footer-nav ul li a{
+  color: #222;
+}
+
+/* top nav */
+li .icon{
+  display: inline-block;
+}
+.icon:hover {
+  cursor: default;
+}
+
+.icon-apps {
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/icon-apps.png');
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  position: relative;
+  top: 7px;
+}
+
+.icon-apps:hover {
+  opacity: 1;
+}
+.icon-notif:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+.icon-notif {
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-size: 12px 12px;
+  background-image: url('../assets/icon-notif.png');
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-position: center;
+  border-radius: 100%;
+}
+
+.icon-photo {
+  position: relative;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  background-image: url('../assets/icon-photo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+
+}
+
+.main-nav {
+  position: relative;
+  top: -7px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.main-nav ul {
+  padding-left: 0;
+  display: inline-block;
+}
+
+.main-nav ul li{
+  padding-right: 15px;
+}
+
+.main-nav ul li:last-child{
+  padding-right: 0;
+}
+
+/* content */
+.logo {
+  margin-top: 140px;
+  text-align: center;
+}
+
+.logo-google {
+  display: inline-block;
+  width: 272px;
+  height: 92px;
+  background-image: url('../assets/googlelogo.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-country {
+  color: #4285f4;
+  font-size: 16px;
+  position: relative;
+  right: 58px;
+}
+
+.content{
+  margin-top: 25px;
+  text-align: center;
+}
+
+.searchbar{
+  border: 1px solid red;
+  width: 480px;
+  height: 38px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.searchbar:focus{
+  border: 1px solid #4285f4;
+  outline: none;
+}
+
+.icon-mic {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/icon-mic.png');
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  position: relative;
+  right: 37px;
+  top: 8px;
+  z-index: 1;
+  padding-left: 8px;
+}
+
+.btn-homepage {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 2px;
+  height: 36px;
+  padding: 0 16px;
+  margin: 15px 4px;
+  color: #757575;
+}
+.btn-homepage:hover {
+  border: 1px solid #c4c4c4;
+  color: #222;
+}
+.btn-homepage:focus{
+  border: 1px solid #4285f4;
+  outline: none;
+}
+
+.lang-select a {
+  color: #1a0dab;
+  padding: 0 3px;
+}
+
+.lang-select:visited {
+  color: #609;
+}
+
+/* footer */
+.footer-nav ul {
+  display: inline-block;
+  padding: 0;
+  width: 50%;
+}
+.footer-nav {
+  border-top: 1px solid #e4e4e4;
+  background-color: #f2f2f2;
+  min-width: 980px;
+}
+
+.footer-nav-left {
+  text-align: left;
+}
+.footer-nav-right {
+  text-align: right;
+}
+
+.footer-nav ul li a{
+  color: #666;
+  padding-left: 27px;
+}
+
+.footer-nav-right li:first-child a{
+  padding-left: 0;
+}
+
+.footer-nav-right li:last-child a{
+  padding-right: 27px;
+}
+
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -40px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer-nav, .page-wrap:after {
+  height: 40px;
+}
